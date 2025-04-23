@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            background: linear-gradient(to right, #2a0033, #00d4ff);
+
+        }
+
+        .login {
+            text-align: center;
+            color: white;
+            font-family: sans-serif;
+            margin-top: 92px;
+        }
+
+        .firstinput {
+            display: block;
+            padding-left: 30px;
+            width: 300px;
+            height: 45px;
+            border: 3px solid rgba(255, 0, 0, 0);
+            /* border-radius: 10px; */
+            background-color: rgba(255, 0, 0, 0);
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin: 30px auto;
+            border-bottom: 3px solid white;
+            transition: 0.2s;
+        }
+
+        .secondinput {
+            display: block;
+            padding-left: 30px;
+            width: 300px;
+            height: 45px;
+            border: 3px solid rgba(255, 0, 0, 0);
+            /* border-radius: 10px; */
+            background-color: rgba(255, 0, 0, 0);
+            color: white;
+            font-size: 20px;
+            border-radius: 5px;
+            margin: auto;
+            border-bottom: 3px solid white;
+            transition: 0.2s;
+
+        }
+
+        input::placeholder {
+            color: white;
+        }
+
+        input:hover,
+        input:focus {
+            box-shadow: 0 0 15px 5px rgb(255, 255, 255);
+        }
+
+        .forgot {
+            text-align: center;
+            margin-top: 20px;
+            color: white;
+            font-family: sans-serif;
+            font-size: 16px;
+        }
+
+        button {
+            display: block;
+            /* padding: 20px; */
+            margin: 25px auto;
+            font-family: sans-serif;
+            font-size: 20px;
+            color: white;
+            background: linear-gradient(to right, #2a003353, #00d4ff);
+            border: 2px solid white;
+            border-radius: 5px;
+            width: 120px;
+            height: 45px;
+            transition: 0.2s;
+        }
+
+        button:hover,
+        button:active {
+            box-shadow: 0 0 15px 5px rgb(255, 255, 255);
+            transform: scale(0.97);
+        }
+
+        #box {
+            margin: 20px auto;
+            padding-top: 1px;
+            width: 400px;
+            height: 500px;
+            border: 3px solid rgb(172, 174, 178);
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgb(83, 212, 224);
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box">
+        <div class="login">
+            <h1>Login</h1>
+        </div>
+        <div>
+            <label for="username"></label>
+            <input class="firstinput" type="text" name="Username" id="username" placeholder="Username">
+        </div>
+        <div>
+            <label for="password"></label>
+            <input class="secondinput" type="text" name="Password" id="password" placeholder="Password">
+        </div>
+        <div class="forgot">
+            Forgot Password
+        </div>
+        <div>
+            <button onclick="click">Login</button>
+        </div>
+    </div>
+</body>
+
+</html>
